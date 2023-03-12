@@ -84,6 +84,7 @@ function getDataFromLocalStorage() {
   let data = window.localStorage.getItem("tasks");
   if (data) {
     let tasks = JSON.parse(data);
+    addElementsToPageFrom(tasks)
   }
 }
 
